@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f5">
+  <title>Soukromí · Přehled výdajů</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#273028;background:#f7f7f5;line-height:1.65}
+    body{margin:0;padding:36px 20px}
+    main{max-width:720px;margin:auto}
+    a{color:#34563b}
+    h1{font-size:34px;line-height:1.15;letter-spacing:-.035em;font-weight:550;margin:32px 0 14px}
+    h2{font-size:19px;margin:32px 0 9px;font-weight:600}
+    p,li{font-size:15px}
+    .back{font-size:14px;text-decoration:none}
+    .note{color:#6f796f;font-size:13px}
+  </style>
+</head>
+<body><main>
+  <a class="back" href="./">← Zpět do aplikace</a>
+  <h1>Jak aplikace zachází s daty</h1>
+  <p class="note">Přehled výdajů · aktualizováno 5. listopadu 2026</p>
+  <p>Aplikace slouží k osobní evidenci výdajů. Částky, poznámky, kategorie a přiložené obrázky se ukládají do tohoto zařízení. Rozpoznání textu z obrázku probíhá přímo v zařízení.</p>
+  <h2>Google Drive</h2>
+  <p>Pokud připojíš Google účet, aplikace synchronizuje tyto záznamy a obrázky do své skryté složky <code>appDataFolder</code> ve tvém Google Drivu. Žádá oprávnění <code>drive.appdata</code>, které neumožňuje číst ostatní soubory na Drivu. K identifikaci profilu používá identifikátor a e-mail Google účtu.</p>
+  <h2>Webová verze</h2>
+  <p>Webová verze uchovává přístupový token pouze po dobu otevřené stránky. Po jeho vypršení může znovu požádat o přihlášení. Název a identifikátor naposledy použitého účtu si pamatuje v tomto prohlížeči, aby zobrazila místní historii i bez připojení. Heslo ke Googlu aplikace nikdy nevidí.</p>
+  <h2>Hostování a zálohy</h2>
+  <p>Webové hostování doručuje soubory aplikace, běžně při tom může zpracovat technické údaje o požadavku včetně IP adresy. Kód aplikace neposílá výdaje hostiteli webu a nepoužívá analytiku ani reklamu. Souborovou zálohu JSON si můžeš stáhnout v části „Data a záloha“; tento soubor není šifrovaný.</p>
+  <h2>Tvoje kontrola</h2>
+  <p>Výdaje a kategorie můžeš upravit nebo smazat v aplikaci. Odhlášení smaže místní přihlašovací stav, nikoli data již uložená na Drivu. Přístup aplikace ke Googlu lze odvolat v <a href="https://myaccount.google.com/connections">nastavení Google účtu</a>. Pro úplné odstranění souborů aplikace z Drivu použij správu dat propojených aplikací v Google Drivu.</p>
+</main></body></html>

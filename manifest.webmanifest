@@ -1,0 +1,15 @@
+{
+  "name": "Přehled výdajů",
+  "short_name": "Výdaje",
+  "description": "Soukromý přehled výdajů ze screenshotů",
+  "lang": "cs",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f5",
+  "theme_color": "#f7f7f5",
+  "icons": [
+    { "src": "./apple-touch-icon.png", "sizes": "256x256", "type": "image/png", "purpose": "any" },
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
